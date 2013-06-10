@@ -1,0 +1,16 @@
+{
+    "name": "chad-thompson/memcached-example",
+    "description": "A Project to Demonstration and Measure Disk Reads / Parsing and MemCached",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Chad Thompson",
+            "email": "chad@chadthompson.com"
+        }
+    ],
+    "require": {
+        "simplepie/simplepie": "1.3.1",
+        "phpunit/phpunit": "3.7.21",
+        "phpunit/php-timer": "1.0.4"
+    }
+}
