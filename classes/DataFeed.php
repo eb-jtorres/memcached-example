@@ -75,13 +75,8 @@ class DataFeed {
             $feedString = $this->meminstance->get($name);
 
             if(!$feedString){
-                if($this->meminstance->getResultCode() == Memcached::RES_NOTFOUND){
-                    $this->cacheFileToMemcache($name);
-                    $feedString = $this->meminstance->get($name);
-                } else {
-                    // error.
-                    print "Memcached Error";
-                }
+                 $this->cacheFileToMemcache($name);
+                 $feedString = $this->meminstance->get($name);
             }
 
             $feed->set_raw_data($feedString);
