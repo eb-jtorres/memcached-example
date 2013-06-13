@@ -28,8 +28,8 @@ class DataFeed {
 
     function __construct()
     {
-        $this->meminstance = new Memcached();
-        $this->meminstance->addServer('localhost',11211);
+        $this->meminstance = new Memcache();
+        $this->meminstance->connect('memcache.local',11211) or die("Could Not Connect to Memcache Instance");
     }
 
 

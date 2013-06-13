@@ -5,3 +5,5 @@ vendor/*
 jmeter-test/output.csv
 
 .idea/*
+
+composer.lock
